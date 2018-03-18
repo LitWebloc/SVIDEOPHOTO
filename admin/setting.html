@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Настройка сайта</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="demo/demo.css" rel="stylesheet" />
+
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar" data-color="yellow">
+            <div class="logo">
+           <a href="#" class="center simple-text logo-normal">
+                    svideophoto.com
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Админ панель</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="page.html">
+                            <i class="now-ui-icons files_paper"></i>
+                            <p>Страницы</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recording.html">
+                            <i class="now-ui-icons ui-1_calendar-60"></i>
+                            <p>Записи</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="orders.html">
+                            <i class="now-ui-icons ui-1_email-85"></i>
+                            <p>Заказы</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reviews.html">
+                            <i class="now-ui-icons users_single-02"></i>
+                            <p>Отзывы</p>
+                        </a>
+                    </li>
+                     <li class="active">
+                        <a href="setting.html">
+                            <i class="now-ui-icons loader_gear"></i>
+                            <p>Настройки</p>
+                        </a>
+                    </li>
+                    <li class="exid">
+                        <a href="#">
+                            <i class="now-ui-icons media-1_button-power"></i>
+                            <p>Выход</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="#pablo">Настройки сайта</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Поиск...">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-sm">
+            </div>
+            <div class="content">
+                <div class="row">
+                           <div class="col-md-3">
+                               <div class="card">
+                                   <div class="card-header">
+                                <h5 class="title inline">Меню </h5>
+                            </div>
+                                   <div id="sort" data-sortable=".column">
+                                       <div class="column" data-position='0' data-id='1'>
+                                           <a href="#" name="amod" onclick="amod();">Главная</a>
+                                       </div>
+                                        <div class="column" data-position='1' data-id='2'>
+                                           <a href="#">Портфолио</a>
+                                       </div>
+                                           <div class="column" data-position='2' data-id='3'>
+                                           <a href="#">Цены</a>
+                                       </div>
+                                           <div class="column" data-position='3' data-id='4'>
+                                            <a href="#">Отзывы</a>
+                                       </div>
+                                           <div class="column" data-position='4' data-id='5'>
+                                           <a href="#">Блог</a>
+                                       </div>
+                                           <div class="column" data-position='5' data-id='6'>
+                                           <a href="#">Связаться</a>
+                                       </div>
+                                            
+                                           
+                                          
+                                           
+                                           
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3">
+                               <div class="card">
+                                   <div class="card-header">
+                                <h5 class="title inline">Соц. сети </h5>
+                            </div>
+                                   <div id="sort1" data-sortable=".column">
+                                       <div class="column" data-position='0' data-id='11'>
+                                           <a href="#" name="amod" onclick="amod();">Facebook</a>
+                                       </div>
+                                        <div class="column" data-position='1' data-id='12'>
+                                           <a href="#">Vk</a>
+                                       </div>
+                                           <div class="column" data-position='2' data-id='13'>
+                                           <a href="#">Instagram</a>
+                                       </div>         
+                                   </div><div class="m10">
+                                <button class="btn btn-success" >Сохранить</button>
+                                <button class="btn btn-info" >Добавить</button>
+                                </div>
+                               </div>
+                           </div>
+                            
+                     
+                    
+
+                  
+                    
+              <div class="col-md-6">
+                        <div class="card card-user">
+                            <div class="card-header">
+                                <h5 class="title">Там где лого</h5>
+                            </div>
+                            <div class="card-body">
+                            <form>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Название сайта</label>
+                                                <input type="text" class="form-control" placeholder="Сайт" value="svideophoto.by">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Информация о сайте</label>
+                                                <input type="text" class="form-control" placeholder="Инф." value="Информация о сайте">
+                                            </div>
+                                        </div>
+                                        <div class="m10">
+                                <button class="btn btn-success" >Сохранить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Редактировать контакты</h5>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                <div class="m10">
+                                    <input type="file" class="mb10">
+<!--                                    <button class="btn btn-info ">Сохранить</button>-->
+                                    </input>
+                                </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Имя и фамилия</label>
+                                                <input type="text" class="form-control" placeholder="Имя" value="Андрей">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Телефон</label>
+                                                <input type="text" class="form-control" placeholder="Телефон" value="+434532">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Email</label>
+                                                <input type="email" class="form-control" placeholder="Email" value="vvv@vv.kj">
+                                            </div>
+                                        </div>
+                                        <div class="m10">
+                                <button class="btn btn-success" >Сохранить</button>
+                                    </div>
+                                </form>
+                                                            
+                        
+                            </div>
+                        </div>
+                       </div>
+            </div>
+    </div>  
+     <div id="myModal" class="modal fade"> 
+         <div class="modal-dialog modal-lg">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title">Редактирование ссылки</h5><button class="close" data-dismiss="modal">X</button>
+                 </div>
+                 <div class="modal-body">
+                     <div class="col-md-12">
+                        <div class="form-group">
+                        <label>Ссылка</label>
+                        <input type="email" class="form-control" placeholder="Ссылка" value="#">
+                        </div>
+                      </div>
+                    
+                 </div>
+                 <div class="modal-footer"><div class="m10">
+                        <button class="btn btn-success" >Сохранить</button>
+                    </div></div>
+             </div>
+         </div>
+     </div>
+</body>
+<!--   Core JS Files   -->
+<script src="js/core/jquery.min.js"></script>
+<script src="js/core/popper.min.js"></script>
+<script src="js/core/bootstrap.min.js"></script>
+<script src="js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chart JS -->
+<script src="js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="js/now-ui-dashboard.js?v=1.0.1"></script>
+<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+<script src="demo/demo.js"></script>
+<script src="demo/sortable.js"></script>
+<script>
+    sortable = new Sortable(document.querySelector('#sort1'));
+    sortable.success = function(results){
+        console.log(results);
+    }
+</script>
+<script>
+function amod(){
+    $('#myModal').modal("show");
+}
+</script>
+</html>
