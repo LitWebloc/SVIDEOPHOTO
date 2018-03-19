@@ -92,7 +92,7 @@ path{
     padding-right: 285px;
     &0{padding-right: 0;}
 }
-.text-center>button{
+.text-center>.btn-outline-yellow2{
     margin-top: 40px;
     margin-bottom: 40px;
     border-radius: 50px;
@@ -243,6 +243,91 @@ hr{
 .hover:hover .b-black{
         opacity: 0;
     }
+#cost{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/svadba_para.jpg) no-repeat center #ccc;
+}
+.component{
+    margin: 0 auto;
+}
+.component-cost{
+    display: inline-block;
+    background: #fff;
+    margin: 20px;
+    border-radius:30px;
+    text-transform: uppercase;
+    & ul{
+        text-align: left;
+        padding-top: 20%;
+        height: 225px;
+        overflow-y:auto;
+        &>li{
+            padding: 5px;
+        }
+    }
+    &-head{
+        position: relative;
+        top: 0;
+        height: 40%;
+        padding: 20px;
+        padding-top: 30%;
+        border-radius: 30px 30px 0 0;
+        background: $yellow2;
+        font-weight: bold;
+        font-size: 45px;
+    }
+    &>.cost-time{
+        position: relative;
+        background: $yellow2;
+        top: -25px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 0 40px;
+        width: 200px;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+    & .btn-yellow2{
+        display: inline-block;
+        padding: 10px 20%;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+}
+.slick-slide{
+    position: relative;
+    top: 40px;
+    padding-bottom: 20px;
+    height: 60vh !important;
+    @include transition(.2s);
+}
+.slick-center{
+    top: 0;
+    height: 70vh !important;
+    padding-bottom: 0px;
+    &>ul{
+        height: 250px
+    }
+    & .component-cost-head{
+        padding-top: 40%;
+    }
+}
+ul,body{
+    &::-webkit-scrollbar{
+    width:8px;
+    &::-webkit-scrollbar-track:hover{
+            width: 14px;
+    }
+    }
+    &::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-radius: 5px;
+    border-color: #777;
+    background-color: $yellow2;
+
+}
+}
 //This @media
 @media (min-width: 992px) and (max-width: 1200px) {
     .med{

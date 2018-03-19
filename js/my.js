@@ -12,6 +12,14 @@ $(window).on('mousemove', function(e){
         
         $(el).css({
             'transform':translate
-        })
-    })
-})
+        });
+    });
+});
+
+
+$('.component').slick({
+  centerMode: true,
+  centerPadding: '0px',
+  slidesToShow: 3,
+ // autoplay: true
+});

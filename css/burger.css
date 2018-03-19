@@ -1,22 +1,33 @@
+/* line 4, ../scss/burger.scss */
 input { display: none; }
 
 /* ===------ Burger Base ------=== */
+/* line 11, ../scss/burger.scss */
 .burger { top: 5px; width: 30px; height: 30px; position: relative; overflow: hidden; margin-left: 0px; margin-right: 0px; }
+/* line 23, ../scss/burger.scss */
 .burger label { width: 30px; height: 30px; display: block; transition: all 0.35s; cursor: pointer; }
 
+/* line 34, ../scss/burger.scss */
 .bar { width: 100%; height: 3px; display: block; position: absolute; left: 0; background: #fff; border-radius: 10px; transition: all 0.35s; pointer-events: none; }
 
+/* line 49, ../scss/burger.scss */
 .bar-1 { top: 0px; }
 
+/* line 52, ../scss/burger.scss */
 .bar-2 { top: 9px; }
 
+/* line 55, ../scss/burger.scss */
 .bar-3 { top: 18px; }
 
+/* line 58, ../scss/burger.scss */
 .txt { display: none; }
 
 /* ===------ Burger 1 ------=== */
+/* line 67, ../scss/burger.scss */
 .burger-1 input:checked ~ label .bar-1 { top: 18px; transform: rotate(45deg); }
+/* line 72, ../scss/burger.scss */
 .burger-1 input:checked ~ label .bar-2 { left: -100%; }
+/* line 75, ../scss/burger.scss */
 .burger-1 input:checked ~ label .bar-3 { top: 18px; transform: rotate(-45deg); }
 
 /* ===------ Burger 2 ------=== */
@@ -27,12 +38,19 @@ input { display: none; }
 @keyframes a-burger2bar3 { 0% { top: 18px; }
   50% { top: 9px; transform: rotate(0); }
   100% { top: 9px; transform: rotate(-45deg); } }
+/* line 121, ../scss/burger.scss */
 .burger-2 input:checked ~ label .bar-1 { animation: a-burger2bar1 0.35s forwards; }
+/* line 124, ../scss/burger.scss */
 .burger-2 input:checked ~ label .bar-2 { animation: a-burger2bar2 0.35s forwards; }
+/* line 127, ../scss/burger.scss */
 .burger-2 input:checked ~ label .bar-3 { animation: a-burger2bar3 0.35s forwards; }
 
 /* ===------ Burger 3 ------=== */
+/* line 137, ../scss/burger.scss */
 .burger-3 input:checked ~ label { transform: rotate(90deg); }
+/* line 140, ../scss/burger.scss */
 .burger-3 input:checked ~ label .bar-1 { top: 18px; transform: rotate(45deg); }
+/* line 144, ../scss/burger.scss */
 .burger-3 input:checked ~ label .bar-2 { left: 100%; }
+/* line 147, ../scss/burger.scss */
 .burger-3 input:checked ~ label .bar-3 { top: 18px; transform: rotate(-45deg); }
