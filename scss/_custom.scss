@@ -92,18 +92,22 @@ path{
     padding-right: 285px;
     &0{padding-right: 0;}
 }
+#blog{
+    overflow: hidden !important;
+}
 .text-center>.btn-outline-yellow2{
-    margin-top: 40px;
+    margin-top: 25px;
     margin-bottom: 40px;
     border-radius: 50px;
-    padding: 27px 90px;
+    padding: 20px 70px;
     cursor: pointer;
 }
 
 .h-auto{
     font-weight: bold !important;
     text-transform: uppercase;
-    padding: 0 10px;
+    padding: 0;
+    height: 2em;
 }
 
 .hight1{
@@ -114,6 +118,10 @@ path{
 .card{
     border: none !important;
     border-radius: 0px !important;
+    & a{
+        color: #000;
+        text-decoration: none;
+    }
 }
 
 .card-header{
@@ -148,6 +156,11 @@ hr{
     &.w100{
     text-align: center;
     width: 200px;
+    margin: 0 auto !important;
+    }
+    &.w50{
+    text-align: center;
+    width: 100px;
     margin: 0 auto !important;
     }
 }
@@ -218,11 +231,9 @@ hr{
         background-size: cover;
         @include transition(.2s);
     }
-    & .zag{
-
+    & .zag{ 
         top: 50%;
     }
-    
 }
 .portfolio .zag,small{
     z-index: 3;
@@ -230,38 +241,48 @@ hr{
     text-transform:uppercase;
 }
 .b-black{
-    top: 0;
-    left: 0;
-    background: #000;
-    opacity: .4;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    @include transition(.2s);
-}
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: .4;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        @include transition(.2s);
+    }
 .hover:hover .b-black{
         opacity: 0;
     }
 #cost{
     width: 100%;
     height: 100vh;
-    background: url(../img/svadba_para.jpg) no-repeat center #ccc;
+    background: url(../img/love-images.jpg) no-repeat center #ccc;
+    overflow: hidden;
+    & h2{
+        color: #fff;
+    }
+    &>.container-fluid{
+        background: #0003;
+    }
 }
 .component{
     margin: 0 auto;
+    height: 100vh;
 }
 .component-cost{
     display: inline-block;
     background: #fff;
     margin: 20px;
     border-radius:30px;
+    font-weight: bold;
     text-transform: uppercase;
     & ul{
         text-align: left;
         padding-top: 20%;
         height: 225px;
         overflow-y:auto;
+        margin-bottom: 10px;
         &>li{
             padding: 5px;
         }
@@ -307,11 +328,23 @@ hr{
     height: 70vh !important;
     padding-bottom: 0px;
     &>ul{
-        height: 250px
+        height: 250px;
     }
     & .component-cost-head{
         padding-top: 40%;
     }
+}
+#cost>.slick-next{
+    top: 40vh !important;
+}
+#cost>.slick-prev{
+    bottom: 40vh !important;
+}
+#cost>.slick-prev{
+    left: 20% !important;
+}
+#cost>.slick-next{
+    right: 20% !important;
 }
 ul,body{
     &::-webkit-scrollbar{
@@ -329,9 +362,28 @@ ul,body{
 }
 }
 //This @media
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 766px) and (max-width: 1200px) {
     .med{
         display:none; 
+    }
+    .component-cost-head{
+        padding-top: 30%;
+        font-size: 30px;
+    }
+    .component-cost > .cost-time{
+        width: 150px;
+        font-size: 13px;
+         padding: 0px 20px;
+    }
+    .component-cost ul{
+       font-size: 15px; 
+    }
+    .slick-slide .component-cost-head {
+        padding-top: 10%;
+    }
+     .component-cost ul{
+         margin-top: 5px;
+         height: 175px;
     }
 }
 
@@ -344,6 +396,10 @@ ul,body{
     }
     .pr{
         padding-right: 30px;
+    }
+    .component-cost ul{
+         margin-top: 5px;
+         height: 175px;
     }
 }
 
@@ -368,18 +424,53 @@ ul,body{
     margin: 70px 0;
     }
     }
+    
 }
 
-  @media (max-width:767px){
+  @media (max-width:766px){
     h2  {font-size: 1.7em !important;}
     h4  {font-size: 1.9em !important;}
     .about{
-    & h2{
-    text-align: left !important; 
+        & h2{
+            text-align: left !important; 
+        }
+        & hr{
+            width: 20vh;
+            margin-left: 0 !important;
+        }
+      }
+    .slick-center{
+        top: 0;
+        height: 90vh !important;
+        padding-bottom: 0px;
+            &>ul{
+                height: 150px;
+            }
+            & .component-cost-head{
+                padding-top: 40%;
+            }
     }
-    & hr{
-    width: 20vh;
-    margin-left: 0 !important;
+    .slick-slide{
+        & .component-cost-head{
+            padding-top: 50%;
+        }
+        height: 90vh !important;
+        top: 0 !important;
+        @include transition(.2s);
     }
+    .component-cost ul{margin: 0;height: 200px;}
+    #cost{
+        height: 100%;
     }
+    .h-auto{
+        margin-left: -5px;
+    }
+    #blog h5{
+        margin-left: 0 !important;
+    }
+    .text-center > .btn-outline-yellow2{
+        padding: 15px 55px;
+        margin-top: 25px;
+    }
+      .ptb{padding-bottom: 20px;}
 }

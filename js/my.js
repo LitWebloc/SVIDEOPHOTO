@@ -18,8 +18,16 @@ $(window).on('mousemove', function(e){
 
 
 $('.component').slick({
-  centerMode: true,
-  centerPadding: '0px',
-  slidesToShow: 3,
- // autoplay: true
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+  //  autoplay: true,
+    responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        centerMode: true,
+        slidesToShow: 1
+      }
+    }]
 });
