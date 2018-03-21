@@ -202,22 +202,22 @@ template { display: none; }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: 0.5rem; font-family: "Open Sans", sans-serif; font-weight: 500; line-height: 1.1; color: inherit; }
 
 /* line 14, ../scss/_type.scss */
-h1, .h1 { font-size: 2.5rem; }
+h1, .h1 { font-size: 3rem; }
 
 /* line 15, ../scss/_type.scss */
-h2, .h2 { font-size: 2rem; }
+h2, .h2 { font-size: 2.5rem; }
 
 /* line 16, ../scss/_type.scss */
-h3, .h3 { font-size: 1.75rem; }
+h3, .h3 { font-size: 2rem; }
 
 /* line 17, ../scss/_type.scss */
-h4, .h4 { font-size: 1.42rem; }
+h4, .h4 { font-size: 1.75rem; }
 
 /* line 18, ../scss/_type.scss */
-h5, .h5 { font-size: 1.25rem; }
+h5, .h5 { font-size: 1.5rem; }
 
 /* line 19, ../scss/_type.scss */
-h6, .h6 { font-size: 1rem; }
+h6, .h6 { font-size: 1.25rem; }
 
 /* line 21, ../scss/_type.scss */
 .lead { font-size: 1.25rem; font-weight: 300; }
@@ -3842,251 +3842,302 @@ small, .small { display: inline-block; }
 /* line 10, ../scss/_custom.scss */
 #blog { overflow: hidden !important; background: #F7F7F7; }
 
-/* line 15, ../scss/_custom.scss */
+/* line 14, ../scss/_custom.scss */
+#contact { text-transform: uppercase; width: 100%; }
+/* line 17, ../scss/_custom.scss */
+#contact img { margin-bottom: 40px; border-radius: 100%; margin-left: 8px; width: 20vw; text-align: center; }
+/* line 24, ../scss/_custom.scss */
+#contact .fb { font-weight: bold !important; text-transform: uppercase; padding: 0; height: 2em; }
+/* line 30, ../scss/_custom.scss */
+#contact h5 { display: inline-block; font-size: 1.8em; font-weight: bold; margin-left: 10px; }
+/* line 37, ../scss/_custom.scss */
+#contact ul { position: relative; text-align: left; display: inline-block; list-style-type: none; margin: 25px; font-size: .9em; padding: 0; left: 1%; font-weight: bold; }
+/* line 49, ../scss/_custom.scss */
+#contact .med { margin-bottom: 15vh; margin-left: 15px; }
+
+/* line 54, ../scss/_custom.scss */
 .navbar-brand { margin-right: 0; }
 
-/* line 16, ../scss/_custom.scss */
+/* line 55, ../scss/_custom.scss */
 i { width: 27px; height: 27px; margin-left: 15px; -webkit-transition: 0.2s ease-out; -moz-transition: 0.2s ease-out; -o-transition: 0.2s ease-out; transition: 0.2s ease-out; }
-/* line 24, ../scss/_custom.scss */
+/* line 63, ../scss/_custom.scss */
 i:first-child { margin-left: 0; }
-/* line 27, ../scss/_custom.scss */
+/* line 66, ../scss/_custom.scss */
 i:hover { background: #fff; }
 
-/* line 31, ../scss/_custom.scss */
+/* line 70, ../scss/_custom.scss */
 path { Fill: #FFF500; }
 
-/* line 35, ../scss/_custom.scss */
+/* line 74, ../scss/_custom.scss */
 .img { width: 100%; height: 100%; }
 
-/* line 41, ../scss/_custom.scss */
+/* line 80, ../scss/_custom.scss */
 .scena { position: absolute; height: 10em; width: 100%; top: 0; bottom: 0; left: 0; z-index: 1; }
-/* line 49, ../scss/_custom.scss */
+/* line 88, ../scss/_custom.scss */
 .scena > div { position: absolute; width: 100%; top: 0; left: 0; }
 
-/* line 57, ../scss/_custom.scss */
+/* line 96, ../scss/_custom.scss */
 .hw100 { width: 100%; height: 100%; }
 
-/* line 62, ../scss/_custom.scss */
+/* line 101, ../scss/_custom.scss */
 .mt { margin-top: 30px; }
 
-/* line 66, ../scss/_custom.scss */
+/* line 105, ../scss/_custom.scss */
 .mt-70 { margin-top: 70px; }
 
-/* line 70, ../scss/_custom.scss */
+/* line 109, ../scss/_custom.scss */
 .mb { margin-bottom: 30px; }
 
-/* line 73, ../scss/_custom.scss */
+/* line 112, ../scss/_custom.scss */
 .ml0 { margin-left: 0 !important; }
 
-/* line 76, ../scss/_custom.scss */
+/* line 115, ../scss/_custom.scss */
 .mr0 { margin-right: 0 !important; }
 
-/* line 79, ../scss/_custom.scss */
+/* line 118, ../scss/_custom.scss */
 .pb { padding-bottom: 30px; }
 
-/* line 83, ../scss/_custom.scss */
+/* line 122, ../scss/_custom.scss */
 .ptb { padding: 50px 0; }
 
-/* line 87, ../scss/_custom.scss */
+/* line 126, ../scss/_custom.scss */
 .plr { padding: 0 142px; }
 
-/* line 91, ../scss/_custom.scss */
+/* line 130, ../scss/_custom.scss */
 .pl { padding-left: 285px; }
-/* line 93, ../scss/_custom.scss */
+/* line 132, ../scss/_custom.scss */
 .pl0 { padding-left: 0; }
 
-/* line 96, ../scss/_custom.scss */
+/* line 135, ../scss/_custom.scss */
 .pr { padding-right: 285px; }
-/* line 98, ../scss/_custom.scss */
+/* line 137, ../scss/_custom.scss */
 .pr0 { padding-right: 0; }
 
-/* line 101, ../scss/_custom.scss */
+/* line 140, ../scss/_custom.scss */
 .text-center > .btn-outline-yellow2 { margin-top: 25px; margin-bottom: 40px; border-radius: 50px; padding: 20px 70px; cursor: pointer; }
 
-/* line 109, ../scss/_custom.scss */
+/* line 148, ../scss/_custom.scss */
 .h-auto { font-weight: bold !important; text-transform: uppercase; padding: 0; height: 2em; }
 
-/* line 116, ../scss/_custom.scss */
+/* line 155, ../scss/_custom.scss */
 .hight1 { width: 100%; height: 500px; }
 
-/* line 121, ../scss/_custom.scss */
+/* line 160, ../scss/_custom.scss */
 .card { border: none !important; border-radius: 0px !important; background: rgba(255, 255, 255, 0); }
-/* line 125, ../scss/_custom.scss */
+/* line 164, ../scss/_custom.scss */
 .card a { color: #000; text-decoration: none; }
 
-/* line 131, ../scss/_custom.scss */
+/* line 170, ../scss/_custom.scss */
 .card-header { border: none !important; border-radius: 0px !important; background: none !important; font-size: 20px !important; margin-top: 39px; margin-bottom: 0 !important; padding: 0 !important; text-align: center; width: 100%; }
 
-/* line 142, ../scss/_custom.scss */
+/* line 181, ../scss/_custom.scss */
 .card-text { font-size: 13px !important; }
 
-/* line 146, ../scss/_custom.scss */
+/* line 185, ../scss/_custom.scss */
 .card-img-top { border-radius: 0px !important; }
 
-/* line 150, ../scss/_custom.scss */
+/* line 189, ../scss/_custom.scss */
 .w-card { max-width: 1000px; }
 
-/* line 154, ../scss/_custom.scss */
+/* line 193, ../scss/_custom.scss */
 .bold { font-weight: bold !important; }
 
-/* line 158, ../scss/_custom.scss */
+/* line 197, ../scss/_custom.scss */
 hr { background: #000 !important; }
-/* line 160, ../scss/_custom.scss */
+/* line 199, ../scss/_custom.scss */
 hr.w100 { text-align: center; width: 200px; margin: 0 auto !important; }
-/* line 165, ../scss/_custom.scss */
+/* line 204, ../scss/_custom.scss */
 hr.w50 { text-align: center; width: 100px; margin: 0 auto !important; }
 
-/* line 172, ../scss/_custom.scss */
+/* line 210, ../scss/_custom.scss */
+.mauto { margin: 20px 36vw !important; }
+
+/* line 213, ../scss/_custom.scss */
 .header { height: 100vh; width: 100%; background: url(../img/svadba_para.jpg) no-repeat right; background-size: cover; }
 
-/* line 179, ../scss/_custom.scss */
+/* line 220, ../scss/_custom.scss */
 .about { height: 600px; width: 100%; background: url(../img/123.png) no-repeat center; background-size: cover; background-attachment: fixed; color: #fff; }
-/* line 186, ../scss/_custom.scss */
+/* line 227, ../scss/_custom.scss */
 .about > div { padding-top: 120px; height: 100%; width: 100%; background: #0005; }
-/* line 192, ../scss/_custom.scss */
+/* line 233, ../scss/_custom.scss */
 .about hr { background: #fff !important; text-align: center; width: 40vh; margin: 0 auto !important; padding: 1px; }
-/* line 199, ../scss/_custom.scss */
+/* line 240, ../scss/_custom.scss */
 .about p { width: 50%; margin: 70px auto; }
 
-/* line 205, ../scss/_custom.scss */
+/* line 246, ../scss/_custom.scss */
 .portfolio { width: 100%; overflow-x: hidden; }
-/* line 208, ../scss/_custom.scss */
+/* line 249, ../scss/_custom.scss */
 .portfolio .port { position: relative; display: inline-block; color: #fff; text-align: left; padding-top: 13vh; padding-left: 15px; text-decoration: none; }
-/* line 217, ../scss/_custom.scss */
-.portfolio .first { padding: 15% auto; width: 100%; height: 300px; text-align: center; background: url(../img/wwwww.jpg) no-repeat center; background-size: cover; transition: 0.2s; }
-/* line 226, ../scss/_custom.scss */
+/* line 258, ../scss/_custom.scss */
+.portfolio .first { padding: 15% auto; width: 100%; height: 300px; text-align: center !important; background: url(../img/wwwww.jpg) no-repeat center; background-size: cover; transition: 0.2s; }
+/* line 266, ../scss/_custom.scss */
+.portfolio .first small { padding: 0 10%; }
+/* line 270, ../scss/_custom.scss */
 .portfolio .mt { margin-top: 15px; }
-/* line 227, ../scss/_custom.scss */
+/* line 271, ../scss/_custom.scss */
 .portfolio .other { position: relative; width: 100%; height: 300px; margin: 15px; text-align: left; text-align: bottom; background: url(../img/wwwww.jpg) no-repeat center; background-size: cover; transition: 0.2s; }
-/* line 238, ../scss/_custom.scss */
+/* line 282, ../scss/_custom.scss */
 .portfolio .zag { top: 50%; }
 
-/* line 242, ../scss/_custom.scss */
+/* line 286, ../scss/_custom.scss */
 .portfolio .zag, small { z-index: 3; position: relative; text-transform: uppercase; }
 
-/* line 247, ../scss/_custom.scss */
+/* line 291, ../scss/_custom.scss */
 .b-black { top: 0; left: 0; background: #000; opacity: .4; z-index: 1; width: 100%; height: 100%; position: absolute; transition: 0.2s; }
 
-/* line 258, ../scss/_custom.scss */
+/* line 302, ../scss/_custom.scss */
 .hover:hover .b-black { opacity: 0; }
 
-/* line 261, ../scss/_custom.scss */
+/* line 305, ../scss/_custom.scss */
 #cost { width: 100%; height: 100vh; background: url(../img/love-images.jpg) no-repeat center #ccc; background-size: cover; overflow: hidden; }
-/* line 267, ../scss/_custom.scss */
+/* line 311, ../scss/_custom.scss */
 #cost h2 { color: #fff; }
-/* line 270, ../scss/_custom.scss */
+/* line 314, ../scss/_custom.scss */
 #cost > .row { background: #0003; }
 
-/* line 274, ../scss/_custom.scss */
+/* line 318, ../scss/_custom.scss */
 .component { margin: 0 auto; height: 100vh; }
 
-/* line 278, ../scss/_custom.scss */
+/* line 322, ../scss/_custom.scss */
 .component-cost { display: inline-block; background: #fff; margin: 20px; border-radius: 30px; font-weight: bold; text-transform: uppercase; }
-/* line 285, ../scss/_custom.scss */
+/* line 329, ../scss/_custom.scss */
 .component-cost ul { text-align: left; padding-top: 0; overflow-y: auto; margin-bottom: 10vh; margin-top: 5px; height: 150px; }
-/* line 292, ../scss/_custom.scss */
+/* line 336, ../scss/_custom.scss */
 .component-cost ul > li { padding: 5px; }
-/* line 296, ../scss/_custom.scss */
+/* line 340, ../scss/_custom.scss */
 .component-cost-head { position: relative; top: 0; height: 40%; padding: 20px; padding-top: 30%; border-radius: 30px 30px 0 0; background: #F2C94C; font-weight: bold; font-size: 45px; }
-/* line 307, ../scss/_custom.scss */
+/* line 351, ../scss/_custom.scss */
 .component-cost > .cost-time { position: relative; background: #F2C94C; top: -25px; border: 1px solid #000; border-radius: 5px; padding: 0 40px; width: 200px; margin: 0 auto; font-weight: bold; }
-/* line 318, ../scss/_custom.scss */
+/* line 362, ../scss/_custom.scss */
 .component-cost .btn-yellow2 { display: inline-block; padding: 10px 20%; border-radius: 30px; font-weight: bold; }
 
-/* line 325, ../scss/_custom.scss */
+/* line 369, ../scss/_custom.scss */
 .slick-slide { position: relative; top: 40px; padding-bottom: 20px; height: 60vh !important; transition: 0.2s; }
 
-/* line 332, ../scss/_custom.scss */
+/* line 376, ../scss/_custom.scss */
 .slick-center { top: 0; height: 70vh !important; padding-bottom: 0px; }
-/* line 336, ../scss/_custom.scss */
+/* line 380, ../scss/_custom.scss */
 .slick-center > ul { height: 180px; }
-/* line 339, ../scss/_custom.scss */
+/* line 383, ../scss/_custom.scss */
 .slick-center .component-cost-head { padding-top: 40%; }
 
-/* line 343, ../scss/_custom.scss */
+/* line 387, ../scss/_custom.scss */
 #cost > .slick-next { top: 40vh !important; }
 
-/* line 346, ../scss/_custom.scss */
+/* line 390, ../scss/_custom.scss */
 #cost > .slick-prev { bottom: 40vh !important; }
 
-/* line 349, ../scss/_custom.scss */
+/* line 393, ../scss/_custom.scss */
 #cost > .slick-prev { left: 20% !important; }
 
-/* line 352, ../scss/_custom.scss */
+/* line 396, ../scss/_custom.scss */
 #cost > .slick-next { right: 20% !important; }
 
-/* line 356, ../scss/_custom.scss */
+/* line 400, ../scss/_custom.scss */
 ul::-webkit-scrollbar, body::-webkit-scrollbar { width: 8px; }
-/* line 358, ../scss/_custom.scss */
+/* line 402, ../scss/_custom.scss */
 ul::-webkit-scrollbar::-webkit-scrollbar-track:hover, body::-webkit-scrollbar::-webkit-scrollbar-track:hover { width: 14px; }
-/* line 362, ../scss/_custom.scss */
+/* line 406, ../scss/_custom.scss */
 ul::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb { border-width: 1px 1px 1px 2px; border-radius: 5px; border-color: #777; background-color: #F2C94C; }
 
-@media (min-width: 766px) and (max-width: 1200px) { /* line 372, ../scss/_custom.scss */
-  .med { display: none; }
-  /* line 375, ../scss/_custom.scss */
+/* line 413, ../scss/_custom.scss */
+footer { background: #000; width: 100%; padding-top: 2.5rem; padding-bottom: 1.4rem; }
+/* line 418, ../scss/_custom.scss */
+footer b > a { text-transform: uppercase; font-weight: bold; color: #777; text-decoration: none; }
+/* line 424, ../scss/_custom.scss */
+footer .float-left { padding-left: 20px; }
+/* line 425, ../scss/_custom.scss */
+footer .med { float: right; padding-right: 20px; }
+
+@media (min-width: 766px) and (max-width: 1200px) { /* line 432, ../scss/_custom.scss */
+  nav .med { display: none; }
+  /* line 435, ../scss/_custom.scss */
   .component-cost-head { padding-top: 30%; font-size: 30px; }
-  /* line 379, ../scss/_custom.scss */
+  /* line 439, ../scss/_custom.scss */
   .component-cost > .cost-time { width: 150px; font-size: 13px; padding: 0px 20px; }
-  /* line 384, ../scss/_custom.scss */
-  .component-cost ul { font-size: 15px; height: 160px; margin-bottom: 3vh; margin-top: 5px; }
-  /* line 390, ../scss/_custom.scss */
-  .slick-center ul { margin-bottom: 5vh; }
-  /* line 393, ../scss/_custom.scss */
-  .slick-slide .component-cost-head { padding-top: 90px; } }
-@media (min-width: 1201px) and (max-width: 1700px) { /* line 399, ../scss/_custom.scss */
-  .plr { padding: 0 15px; }
-  /* line 402, ../scss/_custom.scss */
-  .pl { padding-left: 30px; }
-  /* line 405, ../scss/_custom.scss */
-  .pr { padding-right: 30px; }
-  /* line 408, ../scss/_custom.scss */
-  .component-cost ul { margin-top: 5px; height: 140px; margin-bottom: 70px; }
-  /* line 413, ../scss/_custom.scss */
-  .slick-center ul { height: 190px; } }
-@media (max-width: 1400px) { /* line 419, ../scss/_custom.scss */
-  .plr { padding: 0; }
-  /* line 422, ../scss/_custom.scss */
-  .pl { padding-left: 0px; }
-  /* line 425, ../scss/_custom.scss */
-  .pr { padding-right: 0px; }
-  /* line 428, ../scss/_custom.scss */
-  .card-header { font-size: 10px !important; }
-  /* line 431, ../scss/_custom.scss */
-  .zag { font-size: 2em !important; }
-  /* line 432, ../scss/_custom.scss */
-  .about { height: 100%; }
-  /* line 434, ../scss/_custom.scss */
-  .about p { width: 100%; margin: 70px 0; } }
-@media (max-width: 766px) { /* line 443, ../scss/_custom.scss */
-  h2 { font-size: 1.7em !important; }
   /* line 444, ../scss/_custom.scss */
-  h4 { font-size: 1.9em !important; }
-  /* line 446, ../scss/_custom.scss */
-  .about h2 { text-align: left !important; }
-  /* line 449, ../scss/_custom.scss */
-  .about hr { width: 20vh; margin-left: 0 !important; }
-  /* line 454, ../scss/_custom.scss */
-  .slick-center { top: 0; height: 90vh !important; padding-bottom: 0px; }
-  /* line 458, ../scss/_custom.scss */
-  .slick-center > ul { height: 150px; }
-  /* line 461, ../scss/_custom.scss */
-  .slick-center .component-cost-head { padding-top: 40%; }
+  .component-cost ul { font-size: 15px; height: 160px; margin-bottom: 3vh; margin-top: 5px; }
+  /* line 450, ../scss/_custom.scss */
+  .slick-center ul { margin-bottom: 5vh; }
+  /* line 453, ../scss/_custom.scss */
+  .slick-slide .component-cost-head { padding-top: 90px; } }
+@media (min-width: 1201px) and (max-width: 1700px) { /* line 459, ../scss/_custom.scss */
+  .plr { padding: 0 15px; }
+  /* line 462, ../scss/_custom.scss */
+  .pl { padding-left: 30px; }
   /* line 465, ../scss/_custom.scss */
-  .slick-slide { height: 90vh !important; top: 0 !important; transition: 0.2s; }
-  /* line 466, ../scss/_custom.scss */
-  .slick-slide .component-cost-head { padding-top: 80px; }
+  .pr { padding-right: 30px; }
+  /* line 468, ../scss/_custom.scss */
+  .component-cost ul { margin-top: 5px; height: 140px; margin-bottom: 70px; }
   /* line 473, ../scss/_custom.scss */
-  .component-cost ul { margin: 0; height: 35vh; margin-bottom: 10px; }
-  /* line 478, ../scss/_custom.scss */
-  #cost { height: 100%; }
-  /* line 481, ../scss/_custom.scss */
-  .h-auto { margin-left: -5px; }
-  /* line 484, ../scss/_custom.scss */
-  #blog h5 { margin-left: 5px !important; }
-  /* line 487, ../scss/_custom.scss */
-  .text-center > .btn-outline-yellow2 { padding: 15px 55px; margin-top: 25px; }
+  .slick-center ul { height: 190px; } }
+@media (max-width: 1400px) { /* line 479, ../scss/_custom.scss */
+  .plr { padding: 0; }
+  /* line 482, ../scss/_custom.scss */
+  .pl { padding-left: 0px; }
+  /* line 485, ../scss/_custom.scss */
+  .pr { padding-right: 0px; }
+  /* line 488, ../scss/_custom.scss */
+  .card-header { font-size: 10px !important; }
   /* line 491, ../scss/_custom.scss */
-  .ptb { padding-bottom: 20px; }
+  .zag { font-size: 2em !important; }
+  /* line 492, ../scss/_custom.scss */
+  .about { height: 100%; }
   /* line 494, ../scss/_custom.scss */
-  .portfolio .port { padding-top: 8vh; font-size: 0.8em; } }
+  .about p { width: 100%; margin: 70px 0; } }
+@media (max-width: 766px) { /* line 503, ../scss/_custom.scss */
+  h2 { font-size: 1.7em !important; }
+  /* line 504, ../scss/_custom.scss */
+  h4 { font-size: 1.9em !important; }
+  /* line 506, ../scss/_custom.scss */
+  .about h2 { text-align: left !important; }
+  /* line 509, ../scss/_custom.scss */
+  .about hr { width: 20vh; margin-left: 0 !important; }
+  /* line 514, ../scss/_custom.scss */
+  .portfolio .first { text-align: left; }
+  /* line 516, ../scss/_custom.scss */
+  .portfolio .first small { padding: 0; }
+  /* line 520, ../scss/_custom.scss */
+  .slick-center { top: 0; height: 90vh !important; padding-bottom: 0px; }
+  /* line 524, ../scss/_custom.scss */
+  .slick-center > ul { height: 150px; }
+  /* line 527, ../scss/_custom.scss */
+  .slick-center .component-cost-head { padding-top: 40%; }
+  /* line 531, ../scss/_custom.scss */
+  .slick-slide { height: 90vh !important; top: 0 !important; transition: 0.2s; }
+  /* line 532, ../scss/_custom.scss */
+  .slick-slide .component-cost-head { padding-top: 80px; }
+  /* line 539, ../scss/_custom.scss */
+  .component-cost ul { margin: 0; height: 35vh; margin-bottom: 10px; }
+  /* line 544, ../scss/_custom.scss */
+  #cost { height: 100%; }
+  /* line 547, ../scss/_custom.scss */
+  .h-auto { margin-left: -5px; }
+  /* line 552, ../scss/_custom.scss */
+  #blog h5 { margin-left: .75em !important; }
+  /* line 555, ../scss/_custom.scss */
+  #blog .card-body { padding: 2.25rem !important; }
+  /* line 559, ../scss/_custom.scss */
+  .text-center > .btn-outline-yellow2 { padding: 15px 55px; margin-top: 25px; }
+  /* line 563, ../scss/_custom.scss */
+  .ptb { padding-bottom: 20px; }
+  /* line 566, ../scss/_custom.scss */
+  .portfolio .port { padding-top: 8vh; font-size: 0.8em; }
+  /* line 571, ../scss/_custom.scss */
+  #contact img { width: 50vw; }
+  /* line 574, ../scss/_custom.scss */
+  #contact ul { left: 4%; font-size: .7em; }
+  /* line 578, ../scss/_custom.scss */
+  #contact h5 { font-size: 1.2em; }
+  /* line 581, ../scss/_custom.scss */
+  #contact .med { margin-left: 4px; }
+  /* line 582, ../scss/_custom.scss */
+  #contact i { width: 20px; margin-left: 10px; }
+  /* line 585, ../scss/_custom.scss */
+  #contact i:first-child { margin-left: 0; }
+  /* line 590, ../scss/_custom.scss */
+  footer { padding-top: 1.5em; }
+  /* line 592, ../scss/_custom.scss */
+  footer .med { display: none; } }
+@media (max-width: 500px) { /* line 599, ../scss/_custom.scss */
+  #contact ul { left: 4.5%; font-size: .65em; } }

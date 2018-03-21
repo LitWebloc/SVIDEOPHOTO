@@ -11,7 +11,46 @@ small,.small{display: inline-block;}
     overflow: hidden !important;
     background: #F7F7F7;
 }
-
+#contact{
+    text-transform: uppercase;
+    width: 100%;
+    & img{
+        margin-bottom: 40px;
+        border-radius: 100%;
+        margin-left: 8px;
+        width: 20vw;
+        text-align: center;
+    }
+    & .fb{
+        font-weight: bold !important;
+        text-transform: uppercase;
+        padding: 0;
+        height: 2em;
+    }
+    & h5{
+        
+        display: inline-block;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    & ul{
+        position: relative;
+        text-align: left;
+        display: inline-block;
+        list-style-type: none;
+        margin: 25px;
+        font-size: .9em;
+        padding: 0;
+        left: 1%;
+        font-weight: bold;
+        
+    }
+    & .med{
+        margin-bottom: 15vh;
+        margin-left: 15px;
+    }
+}
 .navbar-brand{margin-right: 0;}
 i{
     width: 27px;
@@ -168,7 +207,9 @@ hr{
     margin: 0 auto !important;
     }
 }
-
+.mauto {
+    margin: 20px 36vw !important;
+}
 .header{
     height: 100vh;
     width: 100%;
@@ -218,10 +259,13 @@ hr{
         padding: 15% auto;
         width: 100%;
         height: 300px;
-        text-align: center;
+        text-align: center !important;
         background: url(../img/wwwww.jpg) no-repeat center;
         background-size: cover;
         @include transition(.2s);
+        & small{
+            padding: 0 10%;
+        }
     }
     & .mt{margin-top: 15px;}
     & .other{
@@ -354,22 +398,38 @@ hr{
 }
 ul,body{
     &::-webkit-scrollbar{
-    width:8px;
-    &::-webkit-scrollbar-track:hover{
+        width:8px;
+        &::-webkit-scrollbar-track:hover{
             width: 14px;
-    }
+        }
     }
     &::-webkit-scrollbar-thumb{
-    border-width:1px 1px 1px 2px;
-    border-radius: 5px;
-    border-color: #777;
-    background-color: $yellow2;
-
+        border-width:1px 1px 1px 2px;
+        border-radius: 5px;
+        border-color: #777;
+        background-color: $yellow2;
 }
+}
+footer{
+    background: #000;
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 1.4rem;
+    & b>a{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #777;
+        text-decoration: none;
+    }
+    & .float-left{padding-left: 20px;}
+    & .med{
+        float:right;
+        padding-right: 20px;
+    }
 }
 //This @media
 @media (min-width: 766px) and (max-width: 1200px) {
-    .med{
+    nav .med{
         display:none; 
     }
     .component-cost-head{
@@ -431,10 +491,10 @@ ul,body{
     .zag{font-size: 2em !important;}
     .about{
     height: 100%;
-    & p{
-    width: 100%;
-    margin: 70px 0;
-    }
+        & p{
+            width: 100%;
+            margin: 70px 0;
+        }
     }
     
 }
@@ -450,6 +510,12 @@ ul,body{
             width: 20vh;
             margin-left: 0 !important;
         }
+      }
+      .portfolio .first{
+          text-align: left;
+          & small{
+              padding: 0;
+          }
       }
     .slick-center{
         top: 0;
@@ -481,8 +547,14 @@ ul,body{
     .h-auto{
         margin-left: -5px;
     }
-    #blog h5{
-        margin-left: 5px !important;
+    #blog {
+      
+        & h5{
+            margin-left: .75em !important;
+        }
+        & .card-body{
+            padding: 2.25rem !important;
+        }
     }
     .text-center > .btn-outline-yellow2{
         padding: 15px 55px;
@@ -494,5 +566,39 @@ ul,body{
     .portfolio .port{
         padding-top: 8vh;
         font-size: 0.8em;
+    }
+    #contact {
+        & img{
+            width: 50vw;
+        }
+        & ul{
+            left: 4%;
+            font-size: .7em;
+        }
+        & h5{
+            font-size: 1.2em;
+        }
+        & .med{margin-left: 4px;}
+        & i{
+            width: 20px;
+            margin-left: 10px;
+            &:first-child{
+                  margin-left: 0;  
+            }
+        }
+    }
+    footer{
+        padding-top: 1.5em;
+        .med{
+            display: none;
+        }
+    }
+}
+@media (max-width:500px){
+    #contact {
+        & ul{
+            left: 4.5%;
+            font-size: .65em;
+        }
     }
 }
