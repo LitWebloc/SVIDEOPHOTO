@@ -3845,7 +3845,7 @@ small, .small { display: inline-block; }
 /* line 14, ../scss/_custom.scss */
 #contact { text-transform: uppercase; width: 100%; }
 /* line 17, ../scss/_custom.scss */
-#contact img { margin-bottom: 40px; border-radius: 100%; margin-left: 8px; width: 20vw; text-align: center; }
+#contact img { margin-bottom: 40px; border-radius: 100%; margin-left: 5px; width: 20vw; text-align: center; }
 /* line 24, ../scss/_custom.scss */
 #contact .fb { font-weight: bold !important; text-transform: uppercase; padding: 0; height: 2em; }
 /* line 30, ../scss/_custom.scss */
@@ -4060,7 +4060,7 @@ footer .med { float: right; padding-right: 20px; }
   /* line 450, ../scss/_custom.scss */
   .slick-center ul { margin-bottom: 5vh; }
   /* line 453, ../scss/_custom.scss */
-  .slick-slide .component-cost-head { padding-top: 90px; } }
+  .slick-slide .component-cost-head { padding-top: 60px; } }
 @media (min-width: 1201px) and (max-width: 1700px) { /* line 459, ../scss/_custom.scss */
   .plr { padding: 0 15px; }
   /* line 462, ../scss/_custom.scss */
