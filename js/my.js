@@ -16,18 +16,27 @@ $(window).on('mousemove', function(e){
     });
 });
 
+//Слайдер
 
 $('.component').slick({
     centerMode: true,
     centerPadding: '0px',
     slidesToShow: 3,
-  //  autoplay: true,
+    autoplay: true,
     responsive: [
     {
       breakpoint: 900,
       settings: {
         centerMode: true,
-        slidesToShow: 1
+        slidesToShow: 1,
+        autoplaySpeed: 1500
       }
     }]
 });
+
+//Прелоудер
+$(document).ready(function(){
+    $(setTimeout(function() {
+        $('#prelouder').css("opacity","0")
+    }, 2000))
+})
