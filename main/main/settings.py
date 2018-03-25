@@ -28,9 +28,9 @@ except ImportError:
     pass
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['gorsin4h.beget.tech']
 
 
 # Application definition
@@ -83,7 +83,8 @@ WSGI_APPLICATION = 'main.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 if DEBUG==True:
     DATABASES = DATABASES_LOCAL
-else:
+
+if DEBUG==False:
     DATABASES = DATABASES_PROD
 
 
@@ -113,7 +114,7 @@ LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'UTC'
 
-#TIME_ZONE = 'Europe/Kiev'
+TIME_ZONE = 'Europe/Minsk'
 
 USE_I18N = True
 
