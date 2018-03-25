@@ -1,3 +1,4 @@
+//Паралакс с преследованием мыши
 $(window).on('mousemove', function(e){
     var w = $(window).width();
     var h = $(window).height();
@@ -37,6 +38,12 @@ $('.component').slick({
 //Прелоудер
 $(document).ready(function(){
     $(setTimeout(function() {
-        $('#prelouder').css("opacity","0")
-    }, 2000))
+        $('#prelouder').css("opacity","0");
+    if($('#prelouder').css("opacity","0")){
+        $(setTimeout(function() {
+            $('#prelouder').addClass("none")
+        },1000))
+    }
+    },2000))
+    
 })

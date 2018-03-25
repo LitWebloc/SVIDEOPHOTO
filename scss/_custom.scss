@@ -1,6 +1,6 @@
 html,body{
     height: 100%;
-//    overflow-x: hidden;
+    overflow-x: hidden;
 }
 small,.small{display: inline-block;}
 *::selection{
@@ -118,11 +118,16 @@ path{
 .pb{
     padding-bottom: 30px;
 }
-
+.pt{
+    padding-top: 25px;
+  }
 .ptb{
     padding: 50px 0;
 }
-
+.ptb2{
+    padding: 50px 0;
+    padding-bottom: 25px;
+}
 .plr{
     padding: 0 142px;
 }
@@ -139,7 +144,7 @@ path{
 
 .text-center>.btn-outline-yellow2{
     margin-top: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     border-radius: 50px;
     padding: 20px 70px;
     cursor: pointer;
@@ -151,7 +156,11 @@ path{
     padding: 0;
     height: 2em;
 }
-
+.h-auto2{
+    font-weight: bold !important;
+    text-transform: uppercase;
+    padding: 0;
+}
 .hight1{
     width: 100%;
     height: 500px;
@@ -193,7 +202,9 @@ path{
 .bold{
     font-weight: bold !important;
 }
-
+.none{
+    display: none;
+}
 hr{
     background: #000 !important;
     &.w100{
@@ -246,6 +257,9 @@ hr{
 .portfolio{
     width: 100%;
     overflow-x: hidden;
+    & .col-md-4{
+        margin-bottom: -15px;
+    }
     & .port{
         position: relative;
         display: inline-block;
@@ -259,7 +273,7 @@ hr{
         padding: 15% auto;
         width: 100%;
         height: 300px;
-        text-align: center !important;
+        text-align: center;
         background: url(../img/wwwww.jpg) no-repeat center;
         background-size: cover;
         @include transition(.2s);
@@ -304,7 +318,7 @@ hr{
     }
 #cost{
     width: 100%;
-    height: 100vh;
+    height: 900px;
     background: url(../img/love-images.jpg) no-repeat center #ccc;
     background-size: cover;
     overflow: hidden;
@@ -317,7 +331,7 @@ hr{
 }
 .component{
     margin: 0 auto;
-    height: 100vh;
+    height: 600px;
 }
 .component-cost{
     display: inline-block;
@@ -330,7 +344,7 @@ hr{
         text-align: left;
         padding-top: 0;
         overflow-y:auto;
-        margin-bottom: 10vh;
+        margin-bottom: 35px;
         margin-top: 5px;
         height: 150px;
         &>li{
@@ -340,9 +354,9 @@ hr{
     &-head{
         position: relative;
         top: 0;
-        height: 40%;
+        height: 200px;
         padding: 20px;
-        padding-top: 30%;
+        padding-top: 70px;
         border-radius: 30px 30px 0 0;
         background: $yellow2;
         font-weight: bold;
@@ -370,18 +384,17 @@ hr{
     position: relative;
     top: 40px;
     padding-bottom: 20px;
-    height: 60vh !important;
+    height: 500px !important;
     @include transition(.2s);
 }
 .slick-center{
     top: 0;
-    height: 70vh !important;
-    padding-bottom: 0px;
-    &>ul{
-        height: 180px;
-    }
+    height: 575px !important;
     & .component-cost-head{
-        padding-top: 40%;
+        padding-top: 70px;
+    }
+    & ul{
+        height: 200px;
     }
 }
 #cost>.slick-next{
@@ -396,7 +409,7 @@ hr{
 #cost>.slick-next{
     right: 20% !important;
 }
-ul,body{
+*{
     &::-webkit-scrollbar{
         width:8px;
         &::-webkit-scrollbar-track:hover{
@@ -420,6 +433,10 @@ footer{
         font-weight: bold;
         color: #777;
         text-decoration: none;
+        &:hover,:active{
+            color: #999;
+            text-decoration: none;
+        }
     }
     & .float-left{padding-left: 20px;}
     & .med{
@@ -427,13 +444,59 @@ footer{
         padding-right: 20px;
     }
 }
+
+#reviews{
+    width: 100%;
+    display: inline-block;
+    & .pt{
+        padding-top: 15px;
+    }
+    & .btn-outline-yellow2{
+        padding: 15px 25px;
+        margin-top: 5px;
+        text-align: center;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    & .reviews{
+        padding: 0 10px;
+        text-align: justify;
+        & .overflow{
+            height: 164px;
+            overflow: auto;
+        }
+    }
+    & .img_users{
+        overflow: hidden;
+        width: 250px;
+        height: 250px;
+        & img{
+            height: 250px;
+            text-align: center;
+        }
+    }
+    & .reviews_users{
+        margin-bottom: 30px;
+    }
+}
+.other_reviews{
+    background: #F7F7F7;
+    & .pt{
+        padding-top: 21px;
+    }
+}
+.tr{
+    text-align: right;
+}
+.tl{
+    text-align: left;
+}
 //This @media
 @media (min-width: 766px) and (max-width: 1200px) {
     nav .med{
         display:none; 
     }
     .component-cost-head{
-        padding-top: 30%;
         font-size: 30px;
     }
     .component-cost > .cost-time{
@@ -443,15 +506,13 @@ footer{
     }
     .component-cost ul{
         font-size: 15px; 
-        height: 160px;
-        margin-bottom: 3vh;
         margin-top: 5px;
     }
     .slick-center ul{
-       margin-bottom: 5vh; 
+       margin-bottom: 10px; 
     }
     .slick-slide .component-cost-head {
-        padding-top: 60px;
+        padding-top: 50px;
     }
 }
 
@@ -467,11 +528,7 @@ footer{
     }
     .component-cost ul{
         margin-top: 5px;
-        height: 140px;
-        margin-bottom: 70px;
-    }
-    .slick-center ul{
-        height: 190px;
+
     }
 }
 
@@ -502,8 +559,15 @@ footer{
   @media (max-width:766px){
     h2  {font-size: 1.7em !important;}
     h4  {font-size: 1.9em !important;}
+    
+    #reviews{
+        & .col-md-5{
+            text-align: center;
+        }
+    }
+    
     .about{
-        & h2{
+        & h3{
             text-align: left !important; 
         }
         & hr{
@@ -516,30 +580,6 @@ footer{
           & small{
               padding: 0;
           }
-      }
-    .slick-center{
-        top: 0;
-        height: 90vh !important;
-        padding-bottom: 0px;
-            &>ul{
-                height: 150px;
-            }
-            & .component-cost-head{
-                padding-top: 40%;
-            }
-    }
-    .slick-slide{
-        & .component-cost-head{
-            padding-top: 80px;
-        }
-        height: 90vh !important;
-        top: 0 !important;
-        @include transition(.2s);
-    }
-    .component-cost ul{
-        margin: 0;
-        height: 35vh;
-        margin-bottom: 10px;
       }
     #cost{
         height: 100%;
@@ -555,11 +595,15 @@ footer{
         & .card-body{
             padding: 2.25rem !important;
         }
+        &>.text-center .btn-outline-yellow2{
+            margin-bottom: 45px !important;
+        }
     }
     .text-center > .btn-outline-yellow2{
         padding: 15px 55px;
         margin-top: 25px;
     }
+
     .ptb{
         padding-bottom: 20px;
     }
@@ -593,6 +637,17 @@ footer{
             display: none;
         }
     }
+    .reviews_users{
+        margin-top: 20px;
+    }
+}
+@media (min-width:992px) and (max-width:1200px){
+    .img_users{margin-left: -20px;}
+}
+@media (max-width:991px){
+    .tr{text-align: center;}
+    .img_users{display: none;}
+    .reviews{margin-bottom: 30px;}
 }
 @media (max-width:500px){
     #contact {
