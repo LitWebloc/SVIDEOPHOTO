@@ -1,0 +1,152 @@
+$main: #fff;
+$burger2AnimationTime: .35s;
+
+input {
+	display: none;
+}
+
+
+
+/* ===------ Burger Base ------=== */
+.burger {
+    top: 5px;
+	width: 30px;
+	height: 30px;
+	
+	position: relative;
+	
+	overflow: hidden;
+	
+	margin-left: 0px;
+	margin-right: 0px;
+	
+	label {
+		width: 30px;
+		height: 30px;
+		
+		display: block;
+		
+		transition: all $burger2AnimationTime;
+	
+		cursor: pointer;
+	}
+}
+.bar {
+	width: 100%;
+	height: 3px;
+	
+	display: block;
+	
+	position: absolute;
+	left: 0;
+	
+	background: $main;
+	border-radius: 10px;
+	
+	transition: all $burger2AnimationTime;
+	pointer-events: none;
+}
+.bar-1 {
+	top: 0px;
+}
+.bar-2 {
+	top: 9px;
+}
+.bar-3 {
+	top: 18px;
+}
+.txt {
+	display: none;
+}
+
+
+
+/* ===------ Burger 1 ------=== */
+.burger-1 {
+	input:checked ~ label {
+		.bar-1 {
+			top: 18px;
+			
+			transform: rotate(45deg);
+		}
+		.bar-2 {
+			left: -100%;
+		}
+		.bar-3 {
+			top: 18px;
+			
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+
+
+/* ===------ Burger 2 ------=== */
+@keyframes a-burger2bar1 {
+	0% {
+		top: 0px;
+	}
+	50% {
+		top: 9px;
+		transform: rotate(0);
+	}
+	100% {
+		top: 9px;
+		transform: rotate(45deg);
+	}
+}
+@keyframes a-burger2bar2 {
+	0% {}
+	50% {}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes a-burger2bar3 {
+	0% {
+		top: 18px;
+	}
+	50% {
+		top: 9px;
+		transform: rotate(0);
+	}
+	100% {
+		top: 9px;
+		transform: rotate(-45deg);
+	}
+}
+.burger-2 {
+	input:checked ~ label {
+		.bar-1 {
+			animation: a-burger2bar1 $burger2AnimationTime forwards;
+		}
+		.bar-2 {
+			animation: a-burger2bar2 $burger2AnimationTime forwards;
+		}
+		.bar-3 {
+			animation: a-burger2bar3 $burger2AnimationTime forwards;
+		}
+	}
+}
+
+
+
+/* ===------ Burger 3 ------=== */
+.burger-3 {
+	input:checked ~ label {
+		transform: rotate(90deg);
+
+		.bar-1 {
+			top: 18px;
+			transform: rotate(45deg);
+		}
+		.bar-2 {
+			left: 100%;
+		}
+		.bar-3 {
+			top: 18px;
+			transform: rotate(-45deg);
+		}
+	}
+}
