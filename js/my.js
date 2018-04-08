@@ -18,7 +18,6 @@ $(window).on('mousemove', function(e){
 });
 
 //Слайдер
-
 $('.component').slick({
     centerMode: true,
     centerPadding: '0px',
@@ -47,3 +46,44 @@ $(document).ready(function(){
     },2000))
     
 })
+
+//Замена стилей в у определённых form
+$(document).ready(function(){
+$('.coinform select, .checkbox').styler();
+});
+
+//Калькулятор цены
+$(function(){
+	$(".coinform").click(function(){
+        var a=0;
+        var b=0;
+        var d=11;
+        var c=1;
+        
+        $('.coinform select').each(function(){
+			b=parseInt($(this).val());
+		});
+        if($(".coinform select").val()==200){
+            d=20;
+        }
+        $('#time').each(function(){
+			d*=parseInt($(this).val());
+		});
+        if($("#cvadro").is(":checked")) {  
+			a=100;
+        }
+        if($("#render").is(":checked")) {  
+			c=2;
+        }
+        if($(".coinform select").val()==0) {  
+			d=0;
+            a=0;
+        }
+        if($("#time").val()>=8){
+           d=d-(d*0.1);
+        }
+        var bd = b+d;
+        var sum=(bd)*c+a;//
+		$('.sum').text(sum);	
+	});
+});
