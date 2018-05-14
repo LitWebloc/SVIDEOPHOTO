@@ -41,17 +41,18 @@ $(document).ready(function(){
     if($('#prelouder').css("opacity","0")){
         $(setTimeout(function() {
             $('#prelouder').addClass("none")
-        },1000))
+        },1000));
     }
-    },2000))
+    },2000));
     
-})
+});
+
 
 //Замена стилей в у определённых form
 $(document).ready(function(){
 $('.coinform select, .checkbox').styler();
 });
-
+baguetteBox.run('.galery');
 //Калькулятор цены
 $(function(){
 	$(".coinform").click(function(){
@@ -86,4 +87,10 @@ $(function(){
         var sum=(bd)*c+a;//
 		$('.sum').text(sum);	
 	});
+});
+
+//Видеоплеер
+$('svg#plyr-play').click(function(){
+    alert( "Привет" );
+    
 });
