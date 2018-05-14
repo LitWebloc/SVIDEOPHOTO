@@ -4332,10 +4332,8 @@ footer .med { float: right; padding-right: 20px; margin-top: -7px; }
   /* line 915, ../scss/_custom.scss */
   .reviews { margin-bottom: 30px; }
   /* line 917, ../scss/_custom.scss */
-  .work h3 { font-size: 1.3rem; }
-  /* line 921, ../scss/_custom.scss */
-  .work .galery a { height: 230px; } }
-@media (max-width: 500px) { /* line 929, ../scss/_custom.scss */
+  .work h3 { font-size: 1.3rem; } }
+@media (max-width: 500px) { /* line 924, ../scss/_custom.scss */
   #contact ul { left: 4.5%; font-size: .65em; } }
 /* line 3, ../scss/_plyr.scss */
 .plyr__controls { position: relative; top: -40px; width: 100%; height: 30px; padding-top: 2px; }
