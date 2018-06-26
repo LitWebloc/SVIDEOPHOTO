@@ -4264,76 +4264,79 @@ footer .med { float: right; padding-right: 20px; margin-top: -7px; }
   /* line 797, ../scss/_custom.scss */
   .about p { width: 100%; margin: 70px 0; } }
 @media (max-width: 766px) { /* line 806, ../scss/_custom.scss */
-  body::-webkit-scrollbar { width: 0px; }
-  /* line 809, ../scss/_custom.scss */
   h2 { font-size: 1.7em !important; }
-  /* line 810, ../scss/_custom.scss */
+  /* line 807, ../scss/_custom.scss */
   h4 { font-size: 1.9em !important; }
-  /* line 812, ../scss/_custom.scss */
+  /* line 809, ../scss/_custom.scss */
   .aboutcoin > div { padding-top: 70px; }
-  /* line 815, ../scss/_custom.scss */
+  /* line 812, ../scss/_custom.scss */
   .aboutcoin p { width: 90%; }
-  /* line 819, ../scss/_custom.scss */
+  /* line 816, ../scss/_custom.scss */
   .select, #time { width: 100%; }
-  /* line 822, ../scss/_custom.scss */
+  /* line 819, ../scss/_custom.scss */
   .ml25 { margin: 0; }
-  /* line 825, ../scss/_custom.scss */
+  /* line 822, ../scss/_custom.scss */
   .maingoal { padding: 70px 5%; }
-  /* line 829, ../scss/_custom.scss */
+  /* line 826, ../scss/_custom.scss */
   #reviews .col-md-5 { text-align: center; }
-  /* line 835, ../scss/_custom.scss */
+  /* line 832, ../scss/_custom.scss */
   .about h3 { text-align: left !important; }
-  /* line 838, ../scss/_custom.scss */
+  /* line 835, ../scss/_custom.scss */
   .about hr { width: 20vh; margin-left: 0 !important; }
-  /* line 843, ../scss/_custom.scss */
+  /* line 840, ../scss/_custom.scss */
   .portfolio .first { text-align: left; }
-  /* line 845, ../scss/_custom.scss */
+  /* line 842, ../scss/_custom.scss */
   .portfolio .first small { padding: 0; }
-  /* line 849, ../scss/_custom.scss */
+  /* line 846, ../scss/_custom.scss */
   #cost { height: 100%; }
-  /* line 852, ../scss/_custom.scss */
+  /* line 849, ../scss/_custom.scss */
   .h-auto { margin-left: -5px; }
-  /* line 857, ../scss/_custom.scss */
+  /* line 854, ../scss/_custom.scss */
   #blog h5 { margin-left: .75em !important; }
-  /* line 860, ../scss/_custom.scss */
+  /* line 857, ../scss/_custom.scss */
   #blog .card-body { padding: 2.25rem !important; }
-  /* line 863, ../scss/_custom.scss */
+  /* line 860, ../scss/_custom.scss */
   #blog > .text-center .btn-outline-yellow2 { margin-bottom: 45px !important; }
-  /* line 867, ../scss/_custom.scss */
+  /* line 864, ../scss/_custom.scss */
   .text-center > .btn-outline-yellow2 { padding: 15px 55px; margin-top: 25px; }
-  /* line 872, ../scss/_custom.scss */
+  /* line 869, ../scss/_custom.scss */
   .ptb { padding-bottom: 20px; }
-  /* line 875, ../scss/_custom.scss */
+  /* line 872, ../scss/_custom.scss */
   .portfolio .port { padding-top: 8vh; font-size: 0.8em; }
-  /* line 880, ../scss/_custom.scss */
+  /* line 877, ../scss/_custom.scss */
   #contact img { width: 50vw; }
-  /* line 883, ../scss/_custom.scss */
+  /* line 880, ../scss/_custom.scss */
   #contact ul { left: 4%; font-size: .7em; }
-  /* line 887, ../scss/_custom.scss */
+  /* line 884, ../scss/_custom.scss */
   #contact h5 { font-size: 1.2em; }
-  /* line 890, ../scss/_custom.scss */
+  /* line 887, ../scss/_custom.scss */
   #contact .med { margin-left: 4px; }
-  /* line 891, ../scss/_custom.scss */
+  /* line 888, ../scss/_custom.scss */
   #contact i { width: 20px; margin-left: 10px; }
-  /* line 894, ../scss/_custom.scss */
+  /* line 891, ../scss/_custom.scss */
   #contact i:first-child { margin-left: 0; }
-  /* line 899, ../scss/_custom.scss */
+  /* line 896, ../scss/_custom.scss */
   footer { padding-top: 1.5em; }
-  /* line 901, ../scss/_custom.scss */
+  /* line 898, ../scss/_custom.scss */
   footer .med { display: none; }
-  /* line 905, ../scss/_custom.scss */
+  /* line 902, ../scss/_custom.scss */
   .reviews_users { margin-top: 20px; } }
-@media (min-width: 992px) and (max-width: 1200px) { /* line 910, ../scss/_custom.scss */
+@media (min-width: 992px) and (max-width: 1200px) { /* line 907, ../scss/_custom.scss */
   .img_users { margin-left: -20px; } }
+/* line 909, ../scss/_custom.scss */
+body::-webkit-scrollbar { width: 0px !important; }
+
 @media (max-width: 991px) { /* line 913, ../scss/_custom.scss */
+  body::-webkit-scrollbar { width: 0px !important; }
+  /* line 916, ../scss/_custom.scss */
   .tr { text-align: center; }
-  /* line 914, ../scss/_custom.scss */
-  .img_users { display: none; }
-  /* line 915, ../scss/_custom.scss */
-  .reviews { margin-bottom: 30px; }
   /* line 917, ../scss/_custom.scss */
+  .img_users { display: none; }
+  /* line 918, ../scss/_custom.scss */
+  .reviews { margin-bottom: 30px; }
+  /* line 920, ../scss/_custom.scss */
   .work h3 { font-size: 1.3rem; } }
-@media (max-width: 500px) { /* line 924, ../scss/_custom.scss */
+@media (max-width: 500px) { /* line 927, ../scss/_custom.scss */
   #contact ul { left: 4.5%; font-size: .65em; } }
 /* line 3, ../scss/_plyr.scss */
 .plyr__controls { position: relative; top: -40px; width: 100%; height: 30px; padding-top: 2px; }

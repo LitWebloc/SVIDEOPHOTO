@@ -803,9 +803,6 @@ footer{
 }
 
   @media (max-width:766px){
-    body::-webkit-scrollbar{
-        width:0px;  
-    }
     h2  {font-size: 1.7em !important;}
     h4  {font-size: 1.9em !important;}
     .aboutcoin{
@@ -909,7 +906,13 @@ footer{
 @media (min-width:992px) and (max-width:1200px){
     .img_users{margin-left: -20px;}
 }
+    body::-webkit-scrollbar{
+        width:0px !important;
+    }
 @media (max-width:991px){
+	    body::-webkit-scrollbar{
+        width:0px !important;
+    }
     .tr{text-align: center;}
     .img_users{display: none;}
     .reviews{margin-bottom: 30px;}
