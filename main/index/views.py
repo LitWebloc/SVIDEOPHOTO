@@ -11,11 +11,11 @@ def index(request):
 def portfolio(request):
     return render(request, "portfolio.html")
 
-def price(request):
-    return render(request, "price.html")
+def coins(request):
+    return render(request, "coins.html")
 
-def comments(request):
-    return render(request, "comments.html")
+def reviews(request):
+    return render(request, "reviews.html")
 
 def blog(request):
     return render(request, "blog.html")

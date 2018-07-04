@@ -30,7 +30,7 @@ except ImportError:
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = ['gorsin4h.beget.tech']
+ALLOWED_HOSTS = ['weblocnw.beget.tech']
 
 
 # Application definition
@@ -136,10 +136,10 @@ MEDIA_URL = '/madia/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 print MEDIA_ROOT
 print settings.STATIC_URL
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles'),]
 
 
-#print STATICFILES_DIRS
+print STATICFILES_DIRS
 
 
 

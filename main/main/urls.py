@@ -23,11 +23,11 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    url(r'^admin/',     admin.site.urls),
-    url(r'^index',           views.index,    name='index'),
-    url(r'^portfolio/',           views.portfolio,    name='portfolio'),
-    url(r'^price/',     views.price,    name='price'),
-    url(r'^comments/',  views.comments, name='comments'),
-    url(r'^blog/',      views.blog,     name='blog'),
-    url(r'^contact/',   views.contact,  name='contact'),
+        url(r'^admin/',     admin.site.urls),
+        url(r'^index',      views.index,        name='index'),
+        url(r'^portfolio/', views.portfolio,    name='portfolio'),
+        url(r'^coins/',     views.coins,        name='coins'),
+        url(r'^reviews/',   views.reviews,     name='reviews'),
+        url(r'^blog/',      views.blog,         name='blog'),
+        url(r'^contact/',   views.contact,      name='contact'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
