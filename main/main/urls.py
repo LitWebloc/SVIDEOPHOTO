@@ -1,4 +1,4 @@
-"""main URL Configuration
+"""HelloDjango URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -24,7 +24,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
         url(r'^admin/',     admin.site.urls),
-        url(r'^index',      views.index,        name='index'),
+        url(r'^',      views.index,        name='index'),
         url(r'^portfolio/', views.portfolio,    name='portfolio'),
         url(r'^coins/',     views.coins,        name='coins'),
         url(r'^reviews/',   views.reviews,     name='reviews'),
