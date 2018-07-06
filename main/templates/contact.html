@@ -1,8 +1,9 @@
+{% load staticfiles %}
 <!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
+	<title>contact</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
@@ -358,7 +359,7 @@
             c2.17-5.452,5.553-8.137,11.703-8.04l49.916,0.061c1.472,0,2.986,0,4.438,0.239c8.396,1.452,10.705,5.075,8.096,13.293
             c-4.076,12.875-12.06,23.625-19.84,34.391c-8.341,11.525-17.216,22.647-25.495,34.233
             C331.087,237.201,331.683,242.535,341.098,251.727z"/></svg></a></i>
-            <i class="d-inline-block"><a href="">
+            <i class="d-inline-block"><a href="{% static "" %}">
             <?xml version="1.0" encoding="iso-8859-1"?>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
@@ -373,7 +374,7 @@
             C385,154.633,384.925,156.995,384.849,159.356z"/>
             </svg></a>
             </i>
-            <i class="d-inline-block"><a href="">
+            <i class="d-inline-block"><a href="{% static "" %}">
             <?xml version="1.0" encoding="iso-8859-1"?>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
@@ -397,8 +398,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="{% static "js/slick.js" % }"></script>
-<script src="{% static "js/jquery.formstyler.min.js" % }"></script>
-<script src="{% static "js/my.js" % }"></script>
+<script src="{% static "js/slick.js" %}"></script>
+<script src="{% static "js/jquery.formstyler.min.js" %}"></script>
+<script src="{% static "js/my.js" %}"></script>
 </body>
 </html>

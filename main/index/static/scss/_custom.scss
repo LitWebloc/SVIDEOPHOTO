@@ -1,5 +1,5 @@
 html,body{
-    height: 100%;
+ //   height: 100%;
     overflow-x: hidden;
 }
 small,.small{display: inline-block;}
@@ -7,9 +7,28 @@ small,.small{display: inline-block;}
     background: $black;
     color: $white;
 }
+.select{
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 50%;
+    height: 25px;
+    & option{
+        border: none;
+        border-bottom: 1px solid #000;
+        &:hover{
+            background: #000;
+        }
+    }
+}
+.portfolio_child{
+    
+}
 #blog{
     overflow: hidden !important;
     background: #F7F7F7;
+}
+.select{
+    text-align: left;
 }
 #contact{
     text-transform: uppercase;
@@ -17,7 +36,6 @@ small,.small{display: inline-block;}
     & img{
         margin-bottom: 40px;
         border-radius: 100%;
-        margin-left: 5px;
         width: 20vw;
         text-align: center;
     }
@@ -28,11 +46,9 @@ small,.small{display: inline-block;}
         height: 2em;
     }
     & h5{
-        
         display: inline-block;
         font-size: 1.8em;
         font-weight: bold;
-        margin-left: 10px;
     }
     & ul{
         position: relative;
@@ -43,12 +59,13 @@ small,.small{display: inline-block;}
         font-size: .9em;
         padding: 0;
         left: 1%;
-        font-weight: bold;
-        
+        font-weight: bold; 
     }
     & .med{
-        margin-bottom: 15vh;
-        margin-left: 15px;
+        margin-bottom: 10vh;
+    }
+    i:hover {
+        background: #bfa800;
     }
 }
 .navbar-brand{margin-right: 0;}
@@ -70,13 +87,21 @@ i{
 path{
     Fill: $yellow; 
 }
-
 .img{
     width: 100%;
     height: 100%;
 
 }
-
+input:focus,:active{
+    outline: 0;
+    outline-offset: 0;
+}
+#time{
+    width: 50%;
+    height: 18px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
 .scena{
     position: absolute;
     height: 10em;
@@ -128,8 +153,13 @@ path{
     padding: 50px 0;
     padding-bottom: 25px;
 }
-.plr{
-    padding: 0 142px;
+.ptb2{
+    padding-bottom: 25px;
+}
+.ptb3{
+    padding: 25px 0;
+    padding-bottom: 20px;
+    
 }
 
 .pl{
@@ -239,7 +269,7 @@ hr{
     padding-top: 120px;
     height: 100%;
     width: 100%;
-    background: #0005;
+    background: #00000080;
     }
     & hr{
         background: #fff !important;
@@ -252,8 +282,50 @@ hr{
         width: 50%;
         margin: 70px auto;
     }
+    & h3{
+        text-align: center;
+    }
 }
-
+.mt2{
+    margin-top: 1.1em;
+}
+.aboutcoin{
+    height: 550px;
+    width: 100%;
+    background: url(../img/love-images.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $white;
+    &>div{
+    padding-top: 120px;
+    height: 100%;
+    width: 100%;
+    background: #00000080;
+    }
+    &>div>.li{
+    //    letter-spacing: 5px; 
+    }
+    & hr{
+        background: #fff !important;
+        text-align: center;
+        width: 40vh;
+        margin: 0 auto !important;
+        padding: 1px;
+    }
+    & p{
+        width: 50%;
+        margin: 70px auto;
+    }
+    & h3{
+        text-align: center;
+    }
+}
+.text-center > .btn-outline-yellow2{
+    padding: 18px 60px;
+}
+.plr{
+    padding: 0 143px;
+}
 .portfolio{
     width: 100%;
     overflow-x: hidden;
@@ -306,7 +378,7 @@ hr{
         top: 0;
         left: 0;
         background: #000;
-        opacity: .4;
+        opacity: .2;
         z-index: 1;
         width: 100%;
         height: 100%;
@@ -412,16 +484,16 @@ hr{
 *{
     &::-webkit-scrollbar{
         width:8px;
-        &::-webkit-scrollbar-track:hover{
-            width: 14px;
-        }
     }
     &::-webkit-scrollbar-thumb{
         border-width:1px 1px 1px 2px;
         border-radius: 5px;
         border-color: #777;
         background-color: $yellow2;
-}
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 }
 footer{
     background: #000;
@@ -442,12 +514,20 @@ footer{
     & .med{
         float:right;
         padding-right: 20px;
+        margin-top: -7px;
     }
 }
 
 #reviews{
     width: 100%;
     display: inline-block;
+    a{
+        display: inline-block;
+        color: #000;
+        &:hover{
+            text-decoration: none;
+        }
+    }
     & .pt{
         padding-top: 15px;
     }
@@ -464,6 +544,9 @@ footer{
         & .overflow{
             height: 164px;
             overflow: auto;
+        }
+        b {
+            text-transform:uppercase;
         }
     }
     & .img_users{
@@ -491,7 +574,170 @@ footer{
 .tl{
     text-align: left;
 }
+.ml25{
+    margin-left: 25%;
+}
+.mt15{
+    margin-top: 15px;
+}
+.h-auto3{
+    font-weight: bold !important;
+    text-transform: uppercase;
+    padding: 0;
+    height: 0em;
+}
+.maingoal{
+    padding: 100px 25%;
+    background: #f7f7f7;
+    text-align: center;
+}
+#coin{
+    & *{
+        text-transform: uppercase;
+    }
+    input {
+        display: block;
+    }
+}
+.dib{
+    display: inline-block;
+}
+.mtb3{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.summa{
+    margin-top: 30px;
+}
+.inline-block{
+    display: inline-block;
+}
+.page{
+    padding: 55px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #000;
+    a{
+        color: #000;
+        &.active{
+            text-decoration: underline;
+        }
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    ul{
+    list-style-type: none;
+    padding: 0;
+    li{
+    margin: 0 5px;
+    float: left;
+    }
+    }
+}
+#contactform{
+    background: #F7F7F7;
+    .contactform{
+        text-transform: uppercase;
+        &>input{
+            display: block;
+            width: 50%;
+            height: 18px;
+            border: none;
+            border-bottom: 1px solid #000;
+            text-transform: uppercase;
+            margin-top: 35px;
+            background: none;
+        }
+        button{
+            margin-top: 45px;
+            margin-bottom: 35px;
+            margin-left: 14%;
+            border-radius: 50px;
+            padding: 15px 55px;
+            cursor: pointer;
+            background: none;
+            &:hover{
+               background-color: $yellow2;
+            }
+        }
+    }
+}
+.news{
+    img{
+        width: 100%;
+        margin-bottom: 45px;
+    }
+    h2{
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 40px;
+    }
+    p{
+        text-align: justify;
+    }
+}
+.work{
+    iframe{
+        width: 100%;
+        height: 25vw;
+    }
+    h2{
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 40px;
+    }
+    h3{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .galery{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            display: block;
+            overflow: hidden;
+            height: 230px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    img{
+        width: 100%;
+        margin-bottom: 45px;
+    }
+}
 //This @media
+@media (max-width:1200px){
+    .work{
+        iframe{
+            height: 40vw;
+        }
+        .galery{
+            a{
+                height: 190px;
+            }
+        }
+    }
+    #contactform{
+        .text-center{
+            text-align: left;
+        }
+        .ml25 {
+            margin-left: 0%;
+        }
+        .contactform{
+            &>input{
+                width: 100%;
+            }
+            button{margin-left: 0%;}
+            .button{
+                text-align: center;
+            }
+        }
+    }
+}
 @media (min-width: 766px) and (max-width: 1200px) {
     nav .med{
         display:none; 
@@ -559,7 +805,23 @@ footer{
   @media (max-width:766px){
     h2  {font-size: 1.7em !important;}
     h4  {font-size: 1.9em !important;}
-    
+    .aboutcoin{
+        &>div{
+            padding-top: 70px;
+        }
+        & p{
+          width: 90%;
+        }
+    }
+    .select, #time{
+       width: 100%;   
+    }
+    .ml25{
+        margin: 0;
+    }
+    .maingoal {
+        padding: 70px 5%;
+    }
     #reviews{
         & .col-md-5{
             text-align: center;
@@ -644,10 +906,21 @@ footer{
 @media (min-width:992px) and (max-width:1200px){
     .img_users{margin-left: -20px;}
 }
+    body::-webkit-scrollbar{
+        width:0px !important;
+    }
 @media (max-width:991px){
+	    body::-webkit-scrollbar{
+        width:0px !important;
+    }
     .tr{text-align: center;}
     .img_users{display: none;}
     .reviews{margin-bottom: 30px;}
+    .work{
+         h3{
+            font-size: 1.3rem;
+        }
+    }
 }
 @media (max-width:500px){
     #contact {
