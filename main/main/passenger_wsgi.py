@@ -1,6 +1,6 @@
 import os, sys
 
-site_user_root_dir = '/home/w/weblocnw/weblocnw.beget.tech/public_html'
+site_user_root_dir = '/home/w/weblocnw/svideophoto.com/public_html/'
 
 #project directory
 sys.path.append(os.path.join(site_user_root_dir, 'main'))

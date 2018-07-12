@@ -30,7 +30,7 @@ except ImportError:
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = ['weblocnw.beget.tech']
+ALLOWED_HOSTS = ['svideophoto.com']
 
 
 # Application definition
@@ -139,7 +139,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '../main/media')
 #print STATIC_URL
 #print settings.STATIC_URL
 
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, "staticfiles"),]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "staticfiles"),]
 
 
 #print STATICFILES_DIRS
